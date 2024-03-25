@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web20 C2</title>
+    <style>
+        /* Write all the necessery css here  */
+        body {
+            width: 100%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #top>h1 {
+            text-align: center;
+        }
+
+        .card1 {
+            text-align: center;
+        }
+        .card1 img {
+            height: 150px;
+            width: 150px;
+            overflow: hidden;
+        }
+
+        #top>div {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-gap: 10px;
+            /* justify-content: center; */
+            /* align-items: center; */
+            justify-items: center;
+        }
+
+        
+        .card2 img {
+            height: 150px;
+            width: 100px;
+            overflow: hidden;
+        }
+
+        #mid {
+            width: 80%;
+            margin: 0 auto;
+            
+        }
+
+        #mid>div {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-gap: 10px;
+            /* justify-content: center;
+            align-items: center; */
+            justify-items: center;
+
+        }
+
+        .card3 p {
+            text-align: center;
+            width: 250px;
+            background-color: #F7965F;
+            padding: 20px 0 10px;
+            margin-top: 0px;
+        }
+
+        .card3 img {
+            height: 300px;
+            width: 250px;
+            overflow: hidden;
+            margin-bottom: 0px;
+        }
+
+        #bottom>div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, auto);
+            grid-gap: 10px;
+            /* justify-content: center;
+            align-items: center; */
+            justify-items: center;
+
+        }
+
+
+        /* Medium screens */
+        @media all and (min-width: 401px) and (max-width: 800px) {
+            #top>div {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mid>div {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #bottom>div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        /* Small screens */
+        @media all and (min-width: 100px) and (max-width: 400px) {
+            #top>div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #mid>div {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #bottom>div {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                grid-template-rows: repeat(6, auto);
+                grid-gap: 10px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <h1>Choose Your Store</h1>
+        <div>
+            <!-- 6 cards will go inside here  -->
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Women</p>
+            </div>
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Men</p>
+            </div>
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Kids</p>
+            </div>
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Home</p>
+            </div>
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Tech</p>
+            </div>
+            <div class="card1">
+                <img src="https://images-static.nykaa.com/uploads/3676c7e5-22df-469e-8d05-27a709371317.jpg?tr=w-400,cm-pad_resize"
+                    alt="image1">
+                    <p>Luxe</p>
+            </div>
+        </div>
+    </div>
+    <div id="mid">
+        <h1>Hard to Resist Deals</h1>
+        <div>
+            <!-- 8 cards will go inside here  -->
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+            <div class="card2">
+                <img src="https://images-static.nykaa.com/uploads/233484c0-fc72-4620-b71c-ccffb8c585e8.jpg?tr=w-400,cm-pad_resize"
+                    alt="image2">
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+        <h1>Super Saving Products</h1>
+        <div>
+            <!-- 6 cards will go inside here  -->
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+            <div class="card3">
+                <img src="https://images-static.nykaa.com/uploads/db4960cc-467f-4e33-bc06-4b0b1c632592.jpg?tr=w-600,cm-pad_resize"
+                    alt="image3">
+                    <p>Min 40% Off</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
